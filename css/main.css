@@ -3145,7 +3145,7 @@ body {
 * 设置标题颜色
 */
 .header-inner {
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 5px 5px 5px 5px;
   box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06);
 }
 .post-block.page {
@@ -3306,9 +3306,6 @@ code {
   font-family: 'Lato', "PingFang SC", "华文新魏", sans-serif;
   font-size: 17px;
 }
-.site-meta {
-  padding: auto;
-}
 .posts-collapse .post-header {
   position: relative;
   transition-duration: 0.2s;
@@ -3326,4 +3323,9 @@ code {
   background: rgba(193,66,92,0);
   border-bottom: none;
   border-radius: 10px;
+}
+.menu {
+  margin: 0px;
+  padding: 10px 7px;
+  text-align: center;
 }
