@@ -23,27 +23,30 @@
   <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js" integrity="sha256-a5YRB27CcBwBFcT5EF/f3E4vzIqyHrSR878nseNYw64=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"summer20130725.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#66ccff","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="C语言个数据类型的极限C语言是一门面向过程的语言，也很适合新手上路，在学习C语言的时候第一章让我们接触了printf()函数打印了字符串，这是让我们认识的第一个函数，学完之后开始接触我们的数据类型。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://summer20130725.github.io/2021/07/14/hello-world/index.html">
+<meta property="og:title" content="C语言个数据类型的极限">
+<meta property="og:url" content="https://summer20130725.github.io/2021/07/19/C_C++/C-DataType-Max/index.html">
 <meta property="og:site_name" content="Summer2013的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="C语言个数据类型的极限C语言是一门面向过程的语言，也很适合新手上路，在学习C语言的时候第一章让我们接触了printf()函数打印了字符串，这是让我们认识的第一个函数，学完之后开始接触我们的数据类型。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-07-14T13:28:18.271Z">
-<meta property="article:modified_time" content="2021-07-14T13:28:18.271Z">
+<meta property="og:image" content="https://iknow-pic.cdn.bcebos.com/6a600c338744ebf879568a72d4f9d72a6059a75c">
+<meta property="article:published_time" content="2021-07-19T02:08:32.000Z">
+<meta property="article:modified_time" content="2021-07-19T03:28:05.188Z">
 <meta property="article:author" content="Summer2013">
+<meta property="article:tag" content="基本数据类型">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://iknow-pic.cdn.bcebos.com/6a600c338744ebf879568a72d4f9d72a6059a75c">
 
 
-<link rel="canonical" href="https://summer20130725.github.io/2021/07/14/hello-world/">
+<link rel="canonical" href="https://summer20130725.github.io/2021/07/19/C_C++/C-DataType-Max/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://summer20130725.github.io/2021/07/14/hello-world/","path":"2021/07/14/hello-world/","title":"Hello World"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://summer20130725.github.io/2021/07/19/C_C++/C-DataType-Max/","path":"2021/07/19/C_C++/C-DataType-Max/","title":"C语言个数据类型的极限"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hello World | Summer2013的博客</title>
+<title>C语言个数据类型的极限 | Summer2013的博客</title>
   
 
 
@@ -444,7 +447,7 @@ if(canvas.getContext){
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#C%E8%AF%AD%E8%A8%80%E4%B8%AA%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E6%9E%81%E9%99%90"><span class="nav-number">1.</span> <span class="nav-text">C语言个数据类型的极限</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#C%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.1.</span> <span class="nav-text">C基本数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%AF%A6%E7%BB%86%E5%92%8C%E5%85%B6%E4%BB%96%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.</span> <span class="nav-text">数据类型的详细和其他组合数据类型</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -545,7 +548,7 @@ if(canvas.getContext){
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://summer20130725.github.io/2021/07/14/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://summer20130725.github.io/2021/07/19/C_C++/C-DataType-Max/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://z3.ax1x.com/2021/07/15/Wm5vRg.md.jpg">
@@ -558,7 +561,7 @@ if(canvas.getContext){
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          C语言个数据类型的极限
         </h1>
 
         <div class="post-meta-container">
@@ -570,8 +573,18 @@ if(canvas.getContext){
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2021-07-14 21:28:18" itemprop="dateCreated datePublished" datetime="2021-07-14T21:28:18+08:00">2021-07-14</time>
+      <time title="创建时间：2021-07-19 10:08:32 / 修改时间：11:28:05" itemprop="dateCreated datePublished" datetime="2021-07-19T10:08:32+08:00">2021-07-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/C-C/" itemprop="url" rel="index"><span itemprop="name">C/C++</span></a>
+        </span>
     </span>
 
   
@@ -589,7 +602,7 @@ if(canvas.getContext){
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>367</span>
+      <span>800</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -607,19 +620,45 @@ if(canvas.getContext){
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h2 id="C语言个数据类型的极限"><a href="#C语言个数据类型的极限" class="headerlink" title="C语言个数据类型的极限"></a>C语言个数据类型的极限</h2><p>C语言是一门面向过程的语言，也很适合新手上路，在学习C语言的时候第一章让我们接触了<code>printf()</code>函数打印了字符串，这是让我们认识的第一个函数，学完之后开始接触我们的数据类型。   </p>
+<span id="more"></span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>C语言的数据类型有特别多，让我们巩固一下。   </p>
+<h3 id="C基本数据类型"><a href="#C基本数据类型" class="headerlink" title="C基本数据类型"></a>C基本数据类型</h3><ul>
+<li>基本数据类型   <ul>
+<li>数值类型<ul>
+<li>整形<ul>
+<li>短整形 <code>short</code></li>
+<li>整形   <code>int</code></li>
+<li>长整形 <code>long</code><ul>
+<li>精度整形(浮点型)<ul>
+<li>单精度型    <code>float</code></li>
+<li>双精度      <code>double</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>字符类型 <code>char</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>构造类型<ul>
+<li>数组   <code>[]</code> </li>
+<li>结构体 <code>struct</code></li>
+<li>共用体 <code>union</code></li>
+<li>枚举类型 <code>enum</code></li>
+</ul>
+</li>
+<li>指针类型 <code>*</code></li>
+<li>空类型 <code>void</code></li>
+</ul>
+<h3 id="数据类型的详细和其他组合数据类型"><a href="#数据类型的详细和其他组合数据类型" class="headerlink" title="数据类型的详细和其他组合数据类型"></a>数据类型的详细和其他组合数据类型</h3><ol start="2">
+<li>short、int、long、char、float、double 这六个关键字代表C 语言里的六种基本数据类型。<br>在32位系统上，<code>short</code>内存大小2字节，<code>int</code>的内存大小4字节，<code>long</code>的内存大小4字节，<code>float</code>的内存大小4字节，<code>double</code>的内存大小8字节，<code>char</code>的内存大小1字节，当然在win32的<code>long</code>也是占用内存4个字节，要想long变成8字节必须再加一个<code>long long</code>。    </li>
+</ol>
+<p><code>long double</code>长双精度浮点型的取值范围： 1.18973e+4932 ~ 3.3621e-4932<br><code>unsigned char</code> 无符号字符型的取值范围: 0 ~ 255<br><code>short short</code>   短整型的取值范围:      0 ~ 32767<br>其中long double的取值范围比较长，<code>long double</code>用于取大型的数据比较适合一点，其他的就用<code>long</code> or <code>int</code>就可以了。<br>3. 打印输出这方面，printf输出格式有四种：<code>printf(&quot;字符串\n&quot;);</code> <code>printf(&quot;输出控制符&quot;，输出参数);</code> <code>printf(&quot;输出控制符1 输出控制符2…&quot;, 输出参数1, 输出参数2, …);</code> <code>printf(&quot;输出控制符非输出控制符&quot;，输出参数)</code>,这里直接参考图片吧，懒得打太多字了。<img data-src="https://iknow-pic.cdn.bcebos.com/6a600c338744ebf879568a72d4f9d72a6059a75c" alt="printf数据类型输出格式"></p>
 
     </div>
 
@@ -648,24 +687,27 @@ if(canvas.getContext){
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://summer20130725.github.io/2021/07/14/hello-world/" title="Hello World">https://summer20130725.github.io/2021/07/14/hello-world/</a>
+      <a href="https://summer20130725.github.io/2021/07/19/C_C++/C-DataType-Max/" title="C语言个数据类型的极限">https://summer20130725.github.io/2021/07/19/C_C++/C-DataType-Max/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
-
+  
+          <div class="post-tags">
+              <a href="/tags/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" rel="tag"><i class="fa fa-tag"></i> 基本数据类型</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2021/07/16/C_C++/C_C++judge_odd_even/" rel="prev" title="C语言判断奇偶">
+                  <i class="fa fa-chevron-left"></i> C语言判断奇偶
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/07/15/BlogReadme/" rel="next" title="博客介绍">
-                  博客介绍 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
